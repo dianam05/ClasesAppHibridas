@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>window.alert("Bienvenido a mi sitio web");</div>
+    <div>
+        <img src="https://s5.eestatic.com/2016/12/16/social/Memes-Humor-Redes_sociales-Internet-La_Jungla_178744040_23538138_1706x960.jpg" alt="Este es el ejemplo de un texto alternativo" width="400" height="300">
+    </div>
+</body>
+<script>
+    var nombre = 'Julian';
+    nombre = "Camilo";
+    let edad = 19;
+    edad = 20;
+    let es_hombre = true; // false
+    const estatura = 1.74;
+    //console.log(2 + 2 * 8 / (4 - 10));
+    //document.write(nombre);
+    //console.log(nombre);
+    //window.alert("Bienvenido " + nombre);
+
+
+    var precio = 128 //introduzco un 128 en la variable precio
+        //document.write("Precio: ", precio);
+    var unidades = 10 //otra asignación, luego veremos operadores de asignación
+        //document.write("Unidades: ", unidades);
+    var factura = precio * unidades //multiplico precio por unidades, obtengo el valor
+    factura
+    //document.write("Factura: ", factura);
+    var cociente = factura % 3 //obtengo el cociente de dividir la variable factura por
+    3
+    //document.write("Cociente: ", cociente);
+    precio++ //incrementa en una unidad el precio (ahora vale 129)
+    //document.write("Precio 1: ", precio);
+    precio -= 50; //incrementa en una unidad el precio (ahora vale 129)
+    //document.write("Precio 2: ", precio);
+    precio = precio - 60; //incrementa en una unidad el precio (ahora vale 129)
+    //document.write("Precio 3: ", precio);
+    document.write("<br>");
+    var ahorros = 7000 //asigna un 7000 a la variable ahorros
+    document.write(ahorros);
+    document.write("<br>");
+    ahorros += 3500 //incrementa en 3500 la variable ahorros, ahora vale 10500
+    document.write(ahorros);
+    document.write("<br>");
+    ahorros /= 2 //divide entre 2 mis ahorros, ahora quedan 5250
+    document.write(ahorros);
+
+    document.write("<br>");
+    var cadena1 = "hola";
+    var cadena2 = "mundo";
+    var cadenaConcatenada = cadena1 + " " + cadena2; //cadena concatenada vale"holamundo"
+    document.write(cadenaConcatenada);
+</script>
+<script>
+    var miNumero = 23;
+    var miCadena1 = "pepe";
+    var miCadena2 = "456";
+    var resultado1 = miNumero + miCadena1; //resultado1 vale "23pepe"
+    var resultado2 = miNumero + miCadena2; //resultado2 vale "23456"
+    miCadena2 += miNumero; //miCadena2 ahora vale "45623"
+    console.log(resultado1, resultado2, miCadena2)
+</script>
+<script>
+    document.write("<br>");
+    var miBoleano = true;
+    document.write(miBoleano);
+    document.write("<br>");
+    var miBoleano = !miBoleano; //miBoleano ahora vale false
+    document.write(miBoleano);
+    document.write("<br>");
+    var tengoHambre = true;
+    var tengoComida = false;
+    var comoComida = tengoHambre || tengoComida;
+    document.write(comoComida);
+</script>
+
+</html>

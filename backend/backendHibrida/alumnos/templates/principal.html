@@ -8,6 +8,23 @@
 
 <body>
     <h1>Hola, estas en mi página principal</h1>
+    <h2>{{titulo}}</h2>
+    <table border=1>
+        <thead>
+            <th>Nombre</th>
+            <th>Codigo</th>
+            <th>Curso</th>
+        </thead>
+        <tbody>
+            {% for dato in alumnos %}
+            <tr>
+                <td>{{ dato.nombre }}</td>
+                <td>{{ dato.codigo }}</td>
+                <td>{{ dato.curso }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 
 </html>

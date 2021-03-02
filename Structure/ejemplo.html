@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Un ejemplo practico de css en un documento externo</title>
+    <style>
+        body {
+            font: 10px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        
+        p {
+            font-size: 12ppx;
+            color: #0000FF;
+            text-align: left;
+        }
+        
+        h1 {
+            color: #FF0000;
+            text-align: left;
+        }
+        
+        .clase1 {
+            font-style: italic;
+            font-size: 20px;
+            border-bottom: 1px #000000 dashed;
+            text-align: left;
+        }
+        
+        .clase2 {
+            color: #df0303;
+        }
+        
+        #estilo1 {
+            color: #FFFFFF;
+            font-size: 15px;
+            background-color: #000000;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    Como en la hoja de estilo hemos dicho que el body fuera con fondo blanco, con un texto de tamaño 10 y centrado, esta sera la apariencia principal de la pagina.
+    <p class="clase2">Aqui tenemos un párrafo. Como tambien le hemos aplicado un estilo, podemos ver el texto del parrafo de color azul y con un tamaño ligeramente superior.</p>
+    <p id="estilo1"> A este párrafo le hemos aplicado el “estilo1”, por lo que el texto tiene un fondo negro, un texto en blanco y un tamaño de 15 px.</p>
+    <div class="clase1 clase2">Este texto posee unas caracteristicas propias de la clase 1. No es que sea un estilo muy bonito, pero por lo menos se entiende bien, no?? </div><br>
+    <h1 style="color: #FF0000;text-align: left;">Y aqui tenemos un ultimo estilo.</h1>
+    Pues estos han sido todos los estilos que teniamos preperados para ti. Este tiene otra vez el estilo predeterminado para body.
+</body>
+
+</html>

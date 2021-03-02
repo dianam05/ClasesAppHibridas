@@ -1,0 +1,33 @@
+
+### Crear Virtualenv
+virtualenv env
+virtualenv --python=<direction> env
+
+### Activación env
+env\Scripts\activate
+
+### Instalamos django
+pip uninstall django
+
+### Instalamos "mysqlclient"
+pip install mysqlclient
+
+### Crear Proyecto django
+django-admin startproject <nombre>
+
+### Entrar a la carpeta manage.py 
+
+cd <direction>
+
+### Iniciar Servidor (entrar a la carpeta del proyecto)
+python manage.py runserver
+
+### Solo primera vez o recien instalado en ventana MYSQL 8.0 promt
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1q2w3e';
+
+### Crear migraciones
+python manage.py createmigrations
+
+### Subir migraciones
+python manage.py migrate
+

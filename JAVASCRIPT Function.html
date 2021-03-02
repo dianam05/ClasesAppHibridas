@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function escribirBienvenida() {
+        document.write("<h1>Hola a todos</h1>")
+    }
+</script>
+<script>
+    function Bucle() {
+        var i;
+        for (i = 1; i <= 6; i++) {
+            document.write("<h" + i + ">Encabezado de nivel " + i + "</h" + i + ">")
+        }
+    }
+    //Bucle();
+    //Bucle();
+    //Bucle();
+    //Bucle();
+</script>
+<script>
+    function escribirBienvenida(nombre) {
+        document.write("<h1>Hola " + nombre + "</h1>");
+    }
+    escribirBienvenida("Alberto García");
+    escribirBienvenida("Dario Gomez");
+</script>
+<script>
+    var miNombre = "Felipe";
+    var nombre = "Juan";
+
+    function escribirBienvenida2(nombre, colorTexto = null) {
+        document.write("<font color='" + colorTexto + "'>");
+
+        document.write("<h1>Hola " + nombre + "</h1>");
+        document.write("</font>");
+    }
+    var miColor = "red";
+    escribirBienvenida2("Sebastian", "blue");
+    escribirBienvenida2(miNombre);
+    document.write(nombre);
+</script>
+<script>
+    function areatriangulo(base, altura) {
+        var resultado;
+        resultado = (base * altura) / 2
+        return resultado
+        resultado = 10;
+        return resultado
+    }
+    var areademitriangulo;
+    areademitriangulo = areatriangulo(2, 8);
+    //document.write(areademitriangulo);
+</script>
+
+<script>
+    /// Funciones con Function
+    function multipleReturn(numero) {
+        var resto = numero % 2;
+        console.log(resto);
+        if (resto == 0) return 0;
+        else if (numero == 9) {
+            return numero + 1;
+        } else return numero;
+    }
+    var value = multipleReturn(9);
+
+    document.write(value);
+</script>
+<script>
+    /// Funciones sin Function o asignadas "=>"
+    var multipleReturn = (numero) => {
+        var resto = numero % 2
+        console.log(resto);
+        if (resto == 0) return 0
+        return numero
+    }
+    var value = multipleReturn(9);
+
+    document.write(value);
+</script>
+
+</html>

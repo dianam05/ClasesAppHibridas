@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const miArray = new Array()
+    console.log(miArray);
+    miArray.push(
+        "lunes",
+        "martes",
+        "miercoles",
+        "jueves",
+        "viernes",
+        "sabado",
+        "domingo"
+    )
+    console.log("miArray[6]", miArray[6]);
+    var meses = [
+        "lunes",
+        "martes",
+        "miercoles",
+        "jueves",
+        "viernes",
+        "sabado",
+        "domingo"
+    ];
+    console.log(meses);
+    espacio = "<br>"
+    document.write("Longitud del array: " + meses.length)
+    meses.push("lunes")
+    document.write("Longitud del array: " + meses.length)
+
+    document.write("<br>");
+    for (i = 0; i < meses.length; i++) {
+        document.write(meses[i]);
+        document.write(espacio);
+    }
+    for (mes in meses) {
+        document.write(mes);
+        document.write(espacio);
+    }
+    for (mes in meses) {
+        document.write(meses[mes]);
+        document.write(espacio);
+    }
+    
+</script>
+<script>
+let objeto_javascript = {
+        'alumnos':alumnos,
+        Titulo: "Titulo desde el Render"
+    }
+</script>
+</html>

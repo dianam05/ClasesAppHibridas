@@ -14,13 +14,25 @@ class AlumnoDetail(generics.RetrieveUpdateDestroyAPIView):
 # Create your views here.
 def principal(request):
     alumnos = Alumno.objects.filter (curso__curso="6D")
-    print(type(alumnos))
-    for dato in alumnos:
-        print(dato)
-        print("Nombre", dato.nombre)
-        print("Fecha nacimiento", dato.fecha_nacimiento)
     
     return render(request, "principal.html", {
+        'alumnos':alumnos,
+        'titulo': "Titulo desde el Render"
+    })
+
+    
+def formulario_sin_ajax(request):
+    alumnos = Alumno.objects.all()
+    
+    return render(request, "form.html", {
+        'alumnos':alumnos,
+        'titulo': "Titulo desde el Render"
+    })
+
+def formulario_con_ajax(request):
+    alumnos = Alumno.objects.all()
+    
+    return render(request, "form-ajax.html", {
         'alumnos':alumnos,
         'titulo': "Titulo desde el Render"
     })

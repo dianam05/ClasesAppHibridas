@@ -16,10 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
-from alumnos.views import principal
+from alumnos.views import principal, formulario_sin_ajax, formulario_con_ajax
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('principal/', principal),
+    path('formulario_sin_ajax/', formulario_sin_ajax),
+    path('formulario_con_ajax/', formulario_con_ajax),
     url(r'^', include(('alumnos.urls','alumnos'))),
+    url(r'^rest-auth/', include('rest_auth.urls'))
 ]

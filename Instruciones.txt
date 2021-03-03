@@ -23,10 +23,10 @@ cd <direction>
 python manage.py runserver
 
 ### Solo primera vez o recien instalado en ventana MYSQL 8.0 promt
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1q2w3e';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<Your_Password>';
 
 ### Crear migraciones
-python manage.py createmigrations
+python manage.py makemigrations
 
 ### Subir migraciones
 python manage.py migrate

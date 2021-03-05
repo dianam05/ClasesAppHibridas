@@ -1,0 +1,26 @@
+<ion-content>
+    <div id="content">
+        <div id="form">
+            <ion-item button>
+                <ion-label floating>Usuario</ion-label>
+                <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+            </ion-item>
+            <ion-item *ngIf="usuario">
+                <ion-label floating>Contraseña</ion-label>
+                <ion-input type="password" [(ngModel)]="clave"></ion-input>
+            </ion-item>
+            <ion-button (click)="redirectHomeNavController()" [size]="size_button">
+                Login in
+                <!--(NavController)-->
+            </ion-button>
+            <!--
+<ion-button (click)="redirectHomeRouter()" [size]="size_button" color="{{ color_button }}">
+    Login in (Router)
+</ion-button>
+-->
+            <ion-button routerLink="/register" [size]="size_button" color="{{ color_button }}">
+                Registrar
+            </ion-button>
+        </div>
+    </div>
+</ion-content>

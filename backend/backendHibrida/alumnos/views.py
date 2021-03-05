@@ -13,7 +13,7 @@ class AlumnoDetail(generics.RetrieveUpdateDestroyAPIView):
     
 # Create your views here.
 def principal(request):
-    alumnos = Alumno.objects.filter (curso__curso="6D")
+    alumnos = Alumno.objects.filter(curso__curso="6D")
     
     return render(request, "principal.html", {
         'alumnos':alumnos,

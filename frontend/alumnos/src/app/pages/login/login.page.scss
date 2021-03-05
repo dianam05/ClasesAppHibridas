@@ -1,0 +1,12 @@
+$grey: grey;
+#content {
+    background: #00daff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    #form {
+        background: $grey;
+        border-radius: 8px;
+    }
+}
